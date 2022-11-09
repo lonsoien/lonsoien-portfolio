@@ -173,7 +173,8 @@ function Home() {
         </Col>
       </Row>
     </Container>
-    
+
+    <p>Organisasjonsnr: 9999999999</p>  
     </>
     ); 
 }
