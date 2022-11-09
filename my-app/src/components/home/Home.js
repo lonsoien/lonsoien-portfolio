@@ -9,6 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
 function Home() {
     return (
@@ -163,9 +164,13 @@ function Home() {
           We'll never share your email with anyone else.
         </Form.Text>
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicMessage">
-        <Form.Control type="message" placeholder="Melding" />
-      </Form.Group>
+      <FloatingLabel controlId="floatingTextarea2" label="Melding...">
+        <Form.Control
+          as="textarea"
+          placeholder="Leave a comment here"
+          style={{ height: '100px' }}
+        />
+      </FloatingLabel>
       <Button variant="primary" type="submit">
         SEND
       </Button>
