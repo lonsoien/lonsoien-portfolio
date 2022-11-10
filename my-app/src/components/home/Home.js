@@ -83,7 +83,7 @@ function Home() {
         Vi har som hensikt å skape flere trygge sykkelparkeringer i nærhet til bruker, og at 
         dette skal inspirere til økt bruk av sykkel som fremkomstmiddel.
         </p>
-        <button>OM OSS</button>
+        <button class="om-oss">OM OSS</button>
         </Col>
       </Row>
     </Container>
@@ -164,16 +164,15 @@ function Home() {
           We'll never share your email with anyone else.
         </Form.Text>
       </Form.Group>
-      <FloatingLabel controlId="floatingTextarea2" label="Melding...">
         <Form.Control
           as="textarea"
           placeholder="Leave a comment here"
           style={{ height: '100px' }}
         />
-      </FloatingLabel>
-      <Button variant="primary" type="submit">
+      <Button variant="send" type="submit">
         SEND
-      </Button>
+        
+        </Button>
     </Form>
         </Col>
       </Row>
